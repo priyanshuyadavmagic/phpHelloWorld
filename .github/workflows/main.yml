@@ -69,4 +69,4 @@ jobs:
          aws-region: ${{ secrets.AWS_REGION }}
      - name: Deploy to AWS
        run: 
-         aws deploy create-deployment --application-name github-php-app --deployment-group-name DG1 --s3-location bucket=githubaction-php-app,key=php.zip,bundleType=zip
+         aws deploy create-deployment --application-name github-php-app --deployment-group-name DG2 --s3-location bucket=githubaction-php-app,key=php.zip,bundleType=zip
